@@ -1,7 +1,28 @@
 /* GENERICS  */
 
+:root {
+    --primary: #0084FD;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+
+    margin-top: 3rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 ul {
@@ -12,15 +33,10 @@ ul {
 /* HEADER  */
 
 header {
-    background-color: #0084FD;
+    background-color: var(--primary);
     color: white;
     font-size: 1.1rem;
     padding: 1rem 0;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
 }
 
 header nav {
@@ -46,10 +62,84 @@ header ul {
     padding: 10px;
 }
 
+/* MAIN  */
+
+/* FIRST CARDS SECTION  */
+
+.cards .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cards .big-col {
+    width: calc(100% / 3 * 2 - 1.5rem);
+    display: flex;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+}
+
+.cards .col {
+    width: calc(100% / 3 - 1.5rem);
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cards .col>i {
+    color: var(--primary);
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.cards h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.cards .big-col-content {
+    min-width: 50%;
+    margin: 2rem;
+}
+
+.cards .big-col-img {
+    min-width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cards .big-col-img img {
+    max-width: 65%;
+}
+
+.cards p {
+    line-height: 2em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5A6E7F;
+}
+
+.btn.btn-blue {
+    background-color: var(--primary);
+    color: white;
+    padding: .7rem 2.5rem;
+    font-size: 1.2rem;
+}
+
+.btn.btn-blue .fa-brands {
+    margin-right: .5rem;
+}
 
 /* RESPONSIVE  */
 
+/* TABLET  */
 @media screen and (max-width: 768px) {
+
+    /* HEADER  */
 
     header nav ul {
         display: none;
@@ -59,4 +149,34 @@ header ul {
         display: block;
     }
 
+
+    /* FIRST SECTION  */
+
+    .cards .big-col {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .cards .big-col-img {
+        justify-content: center;
+    }
+}
+
+
+/* PHONE  */
+
+@media screen and (max-width: 468px) {
+
+    .cards .row {
+        flex-direction: column;
+    }
+
+    .cards .col,
+    .cards .big-col {
+        width: 100%;
+    }
+
+    .cards .big-col {
+        align-items: center;
+    }
 }
