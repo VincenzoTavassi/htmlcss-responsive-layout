@@ -15,6 +15,22 @@
 
 .row {
 	display: flex;
+	margin: 0 -1rem;
+}
+
+.btn {
+	background-color: #FFFFFF;
+	color: #333;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.btn.btn-pink {
+	background-color: var(--primary2);
+	color: white;
+	padding: 10px 50px;
+	font-weight: bolder;
+
 }
 
 .clearfix::after {

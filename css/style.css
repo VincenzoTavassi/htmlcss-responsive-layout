@@ -58,13 +58,6 @@ header ul {
     display: none;
 }
 
-.btn {
-    background-color: #FFFFFF;
-    color: #333;
-    border-radius: 20px;
-    padding: 10px;
-}
-
 /* MAIN  */
 
 /* FIRST CARDS SECTION  */
@@ -234,6 +227,52 @@ header ul {
     object-fit: cover;
 }
 
+/* BENEFITS  */
+
+#benefits {
+    background-color: var(--primary2);
+}
+
+#benefits h2 {
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#benefits h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#benefits .card p {
+    color: #333;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+}
+
+#benefits .card div:first-child {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#benefits .row {
+    flex-wrap: wrap;
+}
+
+#benefits .col {
+    padding: 1rem;
+    width: calc(100% / 3);
+}
+
+#benefits .col .card {
+    background-color: white;
+    border-radius: 30px;
+    color: var(--primary2);
+    padding: 2rem;
+}
+
 /* RESPONSIVE  */
 
 /* TABLET  */
@@ -291,6 +330,12 @@ header ul {
     #strategic .col-app img {
         width: 100%;
     }
+
+    /* BENEFITS SECTION  */
+
+    #benefits .col {
+        width: 50%;
+    }
 }
 
 /* PHONE  */
@@ -331,4 +376,13 @@ header ul {
         margin-right: 0;
     }
 
+    /* BENEFITS SECTION   */
+
+    #benefits .col {
+        width: 100%;
+    }
+
+    #benefits h2 {
+        font-size: 2rem;
+    }
 }
