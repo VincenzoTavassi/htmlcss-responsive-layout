@@ -200,8 +200,37 @@ header ul {
 
 /* TESTIMONIALS  */
 
-#testimonials h2,
 #testimonials p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#testimonials .testimonial-statement p::before {
+    content: '“';
+    font-size: 3rem;
+    position: relative;
+    top: 1rem;
+    margin-right: 10px;
+}
+
+#testimonials .testimonial-statement p::after {
+    content: '”';
+    font-size: 3rem;
+    position: relative;
+    top: 1rem;
+    margin-left: 10px;
+}
+
+#testimonials span:first-child {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#testimonials h2 {
+    color: var(--primary2);
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -216,7 +245,13 @@ header ul {
 
 #testimonials .testimonial-statement {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#testimonials .testimonial-statement p {
+    text-align: left;
 }
 
 #testimonials .testimonial-picture {
@@ -524,9 +559,17 @@ RESPONSIVE
         align-items: center;
     }
 
+    #testimonials .testimonial-statement {
+        align-items: center;
+    }
+
     #testimonials .testimonial-picture {
         margin-bottom: 2rem;
         margin-right: 0;
+    }
+
+    #testimonials h2 {
+        font-size: 2rem;
     }
 
     /* BENEFITS SECTION   */
