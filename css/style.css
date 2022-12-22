@@ -285,7 +285,7 @@ header ul {
 }
 
 #about h2 {
-    font-size: 60px;
+    font-size: 4rem;
     color: var(--primary2);
     margin: 2rem 0;
 }
@@ -335,6 +335,55 @@ header ul {
     bottom: 15px;
 
 }
+
+/* GET STARTED  */
+
+#get-started {
+    text-align: center;
+    background-color: var(--primary2);
+    color: white;
+}
+
+#get-started .flex.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#get-started span:first-child {
+    color: hsl(243deg 59% 87%);
+    margin: 4rem 0 1rem 0;
+    display: inline-block;
+}
+
+#get-started h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+#get-started #free {
+    font-size: 5rem;
+    color: hsl(37deg 98% 68%);
+    font-weight: bolder;
+}
+
+#get-started p {
+    line-height: 2.5em;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+#get-started #copyright {
+    margin-top: 2rem;
+    font-size: .8rem;
+}
+
+#get-started #copyright>a {
+    text-decoration: underline;
+}
+
+
 
 /* ++++++++++++++++++++++++
 RESPONSIVE
@@ -465,6 +514,28 @@ RESPONSIVE
 
     #about .about-col,
     #about .find-me {
+        width: 100%;
+    }
+
+    #about .about-col {
+        margin: 0;
+    }
+
+    #about h2 {
+        font-size: 3rem;
+    }
+
+    /* GET STARTED  */
+
+    #get-started h2 {
+        font-size: 2rem;
+    }
+
+    #get-started #free {
+        font-size: 3rem;
+    }
+
+    #get-started p {
         width: 100%;
     }
 }

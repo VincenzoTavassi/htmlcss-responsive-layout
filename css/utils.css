@@ -36,6 +36,14 @@
 
 }
 
+.btn.footer-btn {
+	color: var(--primary2);
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 20px 60px;
+	border-radius: 40px;
+}
+
 .clearfix::after {
 	content: '';
 	clear: both;
