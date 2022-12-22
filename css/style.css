@@ -273,7 +273,72 @@ header ul {
     padding: 2rem;
 }
 
-/* RESPONSIVE  */
+/* ABOUT US  */
+
+#about .about-col {
+    width: 70%;
+    margin-right: 4rem;
+}
+
+#about .find-me {
+    width: 30%;
+}
+
+#about h2 {
+    font-size: 60px;
+    color: var(--primary2);
+    margin: 2rem 0;
+}
+
+#about .about-col p {
+    line-height: 2.5em;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#about .find-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .picture-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#about .find-me img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+#about .find-me p {
+    font-weight: bolder;
+    color: var(--primary2);
+    font-size: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+#about #quote {
+    font-size: 16rem;
+    color: var(--primary2);
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+
+}
+
+/* ++++++++++++++++++++++++
+RESPONSIVE
+++++++++++++++++++++++++ */
 
 /* TABLET  */
 @media screen and (max-width: 768px) {
@@ -336,6 +401,12 @@ header ul {
     #benefits .col {
         width: 50%;
     }
+
+    /* ABOUT US  */
+
+    #about .find-me {
+        justify-content: flex-start;
+    }
 }
 
 /* PHONE  */
@@ -384,5 +455,16 @@ header ul {
 
     #benefits h2 {
         font-size: 2rem;
+    }
+
+    /* ABOUT US  */
+
+    .container.flex {
+        flex-wrap: wrap;
+    }
+
+    #about .about-col,
+    #about .find-me {
+        width: 100%;
     }
 }
