@@ -222,6 +222,10 @@ header ul {
     align-items: center;
 }
 
+#testimonials .testimonial-picture {
+    margin-right: 2rem;
+}
+
 #testimonials .testimonial-picture img {
     border-radius: 50%;
     width: 200px;
@@ -324,6 +328,7 @@ header ul {
 
     #testimonials .testimonial-picture {
         margin-bottom: 2rem;
+        margin-right: 0;
     }
 
 }
