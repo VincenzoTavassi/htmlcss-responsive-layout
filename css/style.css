@@ -16,6 +16,10 @@ section {
     padding-bottom: 1.5rem;
 }
 
+section:last-child {
+    margin-bottom: 0;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -384,6 +388,29 @@ header ul {
 }
 
 
+/* FOOTER  */
+
+footer {
+    background-color: hsl(0deg 0% 20%);
+    padding: 3rem 0;
+}
+
+footer .flex.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    width: 50%;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
 
 /* ++++++++++++++++++++++++
 RESPONSIVE
@@ -455,6 +482,12 @@ RESPONSIVE
 
     #about .find-me {
         justify-content: flex-start;
+    }
+
+    /* FOOTER  */
+
+    footer p {
+        width: 100%;
     }
 }
 
@@ -536,6 +569,12 @@ RESPONSIVE
     }
 
     #get-started p {
+        width: 100%;
+    }
+
+    /* FOOTER  */
+
+    footer p {
         width: 100%;
     }
 }
