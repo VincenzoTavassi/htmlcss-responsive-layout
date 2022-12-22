@@ -6,6 +6,17 @@
 	padding: 0 1rem;
 }
 
+.container-small {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+
+.row {
+	display: flex;
+}
+
 .clearfix::after {
 	content: '';
 	clear: both;
